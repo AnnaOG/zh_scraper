@@ -53,6 +53,8 @@ get_extinction(galaxy, ra, dec, radius, teff='all')
 * `radius` (float): Search radius in arcminutes (maximum 12)  
 * `teff` (str): `'all'`, `'cool'`, or `'hot'` (default = `'all'`)
 
+You can convert your coordinates to the correct units using the units and coordinates functions in `astropy`, or by using [Jan Skowron's flexible converter website](https://www.astrouw.edu.pl/~jskowron/ra-dec/).
+
 **Returns:**
 
 * `(mean_av, stdev_av)` as floats.
