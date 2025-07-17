@@ -11,7 +11,7 @@ Please cite [Zaritsky, Harris, Thompson, Grebel, and Massey 2002, AJ, 123, 855](
 
 ## Requirements
 
-* Python 3.x
+* Python 3.12.11 or higher (tested)
 * requests
 * beautifulsoup4
 * astropy
