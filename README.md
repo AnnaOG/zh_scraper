@@ -25,6 +25,18 @@ pip install -r requirements.txt
 
 ---
 
+## Installation
+
+Clone the repo and install dependencies:
+
+```shell
+git clone https://github.com/AnnaOG/zh_scraper.git
+cd zh_scraper
+pip install -r requirements.txt
+```
+
+---
+
 ## Function Overview
 
 **Function:**
