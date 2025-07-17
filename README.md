@@ -12,14 +12,15 @@ Please cite [Zaritsky, Harris, Thompson, Grebel, and Massey 2002, AJ, 123, 855](
 ## Requirements
 
 * Python 3.12.11 or higher (tested)
-* requests
-* beautifulsoup4
-* astropy
+* Dependencies below listed in `requirements.txt`:
+  * requests 2.31.0 or higher (tested)
+  * beautifulsoup4 4.12.3 or higher (tested)
+  * astropy 7.1.0 or higher (tested)
 
 Install dependencies using pip:
 
 ```shell
-pip install requests beautifulsoup4 astropy
+pip install -r requirements.txt
 ```
 
 ---
