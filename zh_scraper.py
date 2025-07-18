@@ -23,8 +23,6 @@ def get_extinction(galaxy, ra, dec, radius, teff='all'):
     Returns:
         (mean_av, stdev_av) as floats if found, else None
     """
-    
-    # Detect coordinate units and convert to hours/degrees
 
     galaxy = galaxy.upper()
 
