@@ -2,8 +2,6 @@
 # Requirements #
 ################
 
-from astropy import units as u
-from astropy.coordinates import SkyCoord
 import requests
 from bs4 import BeautifulSoup
 
