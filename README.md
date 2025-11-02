@@ -15,7 +15,6 @@ Please cite [Zaritsky, Harris, Thompson, Grebel, and Massey 2002, AJ, 123, 855](
 * Dependencies below listed in `requirements.txt`:
   * requests 2.31.0 or higher (tested)
   * beautifulsoup4 4.12.3 or higher (tested)
-  * astropy 7.1.0 or higher (tested)
 
 Install dependencies using pip:
 
@@ -53,7 +52,7 @@ get_extinction(galaxy, ra, dec, radius, teff='all')
 * `radius` (float): Search radius in arcminutes (maximum 12)  
 * `teff` (str): `'all'`, `'cool'`, or `'hot'` (default = `'all'`)
 
-You can convert your coordinates to the correct units using the units and coordinates functions in `astropy`, or by using [Jan Skowron's flexible converter website](https://www.astrouw.edu.pl/~jskowron/ra-dec/).
+You can convert your coordinates to the correct units using the units and coordinates functions in the `astropy` package, or by using [Jan Skowron's flexible converter website](https://www.astrouw.edu.pl/~jskowron/ra-dec/).
 
 **Returns:**
 

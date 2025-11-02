@@ -1,25 +1,35 @@
-################
-# Requirements #
-################
+# Requirements
 
 import requests
 from bs4 import BeautifulSoup
 
+__all__ = ['get_extinction']
+
 def get_extinction(galaxy, ra, dec, radius, teff='all'):
     """
-    Query the Zaritsky & Harris dust extinction map for LMC or SMC.
+    Query the Zaritsky & Harris dust extinction map for LMC or SMC at https://www.as.arizona.edu/~dennis/mcsurvey/Data_Products.html.
     Please cite Zaritsky, Harris, Thompson, Grebel, and Massey 2002, AJ, 123, 855
     and/or Zaritsky, Harris, Thompson, and Grebel, 2004, AJ, 128, 1606 if used.
 
     Parameters:
-        galaxy (str): 'LMC' or 'SMC'
-        ra (float): Right Ascension in units of hours
-        dec (float): Declination in units of degrees
-        radius (float): Search radius (max 12 arcminutes)
-        teff (str): 'all', 'cool', or 'hot', default is all
+    galaxy : string
+        'LMC' or 'SMC'
+    ra : float
+        Right Ascension in units of hours
+    dec : float
+        Declination in units of degrees
+    radius : float
+        Search radius (max 12 arcminutes)
+    teff : string, optional
+        'all', 'cool', or 'hot', default is all
 
     Returns:
-        (mean_av, stdev_av) as floats if found, else None
+    mean_av, stdev_av : tuple of floats or None
+        Mean extinction Av and standard deviation within the radius if found, else None
+    
+    Raises:
+    ValueError
+        If inputs are invalid or no stars found within the radius.
     """
 
     galaxy = galaxy.upper()

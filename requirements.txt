@@ -1,5 +1,4 @@
 # Minimum tested versions of dependencies for zh_scraper
 
-requests>=2.31.0       # HTTP library for web requests
-beautifulsoup4>=4.12.3  # HTML parser for scraping the extinction map pages
-astropy>=7.1.0         # Astronomy utilities for coordinate validation
+requests>=2.28.0       # HTTP library for web requests
+beautifulsoup4>=4.11.0  # HTML parser for scraping the extinction map pages
