@@ -13,8 +13,8 @@ Please cite [Zaritsky, Harris, Thompson, Grebel, and Massey 2002, AJ, 123, 855](
 
 * Python 3.12.11 or higher (tested)
 * Dependencies below listed in `requirements.txt`:
-  * requests 2.31.0 or higher (tested)
-  * beautifulsoup4 4.12.3 or higher (tested)
+  * requests 2.28.0 or higher (tested)
+  * beautifulsoup4 4.11.0 or higher (tested)
 
 Install dependencies using pip:
 
